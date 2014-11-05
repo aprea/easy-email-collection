@@ -1,0 +1,96 @@
+div.eec-subscribe-form-wrapper {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	word-wrap: normal;
+}
+
+div.eec-subscribe-form-wrapper div.eec-message {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+	display: none;
+	position: relative;
+}
+
+div.eec-subscribe-form-wrapper div.eec-message:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	bottom: -1px;
+	width: 5px;
+	display: block;
+}
+
+div.eec-subscribe-form-wrapper div.eec-submitting:before {
+	background-color: #3AD0C9;
+}
+
+div.eec-subscribe-form-wrapper div.eec-success:before {
+	background-color: #81D03A;
+}
+
+div.eec-subscribe-form-wrapper div.eec-failure {
+	margin-bottom: 10px;
+}
+
+div.eec-subscribe-form-wrapper div.eec-failure:before {
+	background-color: #D03A3A;
+}
+
+div.eec-subscribe-form-wrapper span.eec-spinner {
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+form#eec-subscribe-form {
+	position: relative;
+	padding-right: 45px;
+}
+
+form#eec-subscribe-form input[type=submit].eec-button {
+	font-size: 24px;
+	vertical-align: top;
+	text-align: center;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	display: inline-block;
+	font-family: "Genericons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+	padding: 0;
+	height: 40px;
+	width: 45px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+form#eec-subscribe-form input[type=email].eec-input {
+	height: 40px;
+	border-right: 0;
+}
+
+form#eec-subscribe-form input[type=email].eec-input:invalid,
+form#eec-subscribe-form input[type=email].eec-input:-moz-ui-invalid {
+	border: 1px solid #EE4A70;
+	border-right: 0;
+	outline: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
